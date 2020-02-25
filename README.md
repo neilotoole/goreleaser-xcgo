@@ -1,3 +1,13 @@
+## Fork
+This [neilotoole/goreleaser-xcgo](https://github.com/neilotoole/goreleaser-xcgo) repo forks
+the  [mailchain/goreleaser-xcgo](https://github.com/mailchain/goreleaser-xcgo) repo because
+that `Dockerfile` uses `FROM dockercore/golang-cross`, and that `dockercore` image
+is published with an older version of Go (`1.12.x` at the time of writing).
+This image builds to a newer Go version (via the `golang-cross` fork), and a
+newer `goreleaser` version (at the time of writing). 
+
+> FIXME: update to newer goreleaser `0.127.0`
+
 # goreleaser-xcgo
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=for-the-badge)](/LICENSE.md)
